@@ -5,11 +5,11 @@ int InputNum(string message)
     System.Console.Write(message);
     return int.Parse(Console.ReadLine()!);
 }
-int A = InputNum("Введите размеры столбцов массива: ");
-int B = InputNum("Введите размеры строк массива: ");
-int[,] table = new int[A, B];
-if (A == B)
-    Console.WriteLine("Задан не прямоугольный массив");
+int column = InputNum("Введите размеры столбцов массива: ");
+int row = InputNum("Введите размеры строк массива: ");
+int[,] table = new int[column, row];
+if (column == row)
+    Console.WriteLine("Задан не прямоугольный массив"); // Не понимаю как остановить программу на этом шаге.
 
 void NRMSE(int[,] array)  // NRMSE = полное имя метода NumberRowMinSumElements
 {

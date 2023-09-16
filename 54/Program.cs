@@ -48,9 +48,9 @@ void PrintArray(int[,] array)
     }
 }
 
-int A = InputNum("Введите размеры столбцов массива: ");
-int B = InputNum("Введите размеры строк массива: ");
-int[,] table = new int[A, B];
+int column = InputNum("Введите размеры столбцов массива: ");
+int row = InputNum("Введите размеры строк массива: ");
+int[,] table = new int[column, row];
 FillArrayRandom(table);
 PrintArray(table);
 SortToLower(table);
